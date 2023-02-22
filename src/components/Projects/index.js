@@ -16,7 +16,10 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import { projects } from "../constants/constants";
-
+import logo1 from '../../4.png'
+import logo2 from '../../5.png'
+import logo3 from '../../6.png'
+import logo4 from '../../7.png'
 import { BsGithub } from "react-icons/bs";
 import styled from "styled-components";
 
@@ -64,12 +67,12 @@ const Projects = ({ post, _id }) => {
         
         </Text> */}
       </Center>
-      <Center py={2}>
+      {/* <Center py={2}>
         <Heading style={{ paddingLeft: 30 }}>
           <Text style={{color:"#33b38d"}}> Education</Text>
         </Heading>
-      </Center>
-      <Hr />
+      </Center> */}
+      {/* <Hr /> */}
       {/* <Center py={2}>
         <Text
           Text
@@ -110,7 +113,7 @@ Financial University
           </i>
         </Text>
       </Center> */}
-      <Center>
+      {/* <Center>
         <i style={{ textAlign: "center" }}>
         PhD in Computer Science, Estimated 2024
 Stevens Institute of Technology
@@ -132,7 +135,7 @@ Pratt Institute
 Financial University
 
         </i>
-      </Center>
+      </Center> */}
       <Hr />
       <Center py={2}>
         <Heading style={{ paddingLeft: 30 }}>
@@ -143,71 +146,52 @@ Financial University
         {/* <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}> */}
         {/* <Center py={6}> */}
           <section className=" main" id="about">
-            {projects.map(
-              ({ id, image, title, description, tags, source, visit, likeCount }) => (
-                <div className="reveal card">
-                  <img src={image} alt={title} />
-                  <div className="card-body">
-                    <h6>{title}</h6>
-                    <p>{description}</p>
-                    <TitleContent sx={{ textAlign: "center" }}><strong></strong></TitleContent>
-                    <TagList sx={{ textAlign: "center" }}>
-                      {tags.map((tag, index) => (
-                        <Text style={{ fontWeight:"600"}}>                          
-                          <Tag key={index}>{tag}</Tag>
-                        </Text>
-                      ))}
-                    </TagList>
-                    <div>
-                      <Stack
-                        width={"100%"}
-                        mt={"1rem"}
-                        direction={"row"}
-                        padding={1}
-                        justifyContent={"space-between"}
-                        alignItems={"center"}
-                      >
-                        <Button
-                          flex={1}
-                          fontSize={"sm"}
-                          rounded={"full"}
-                          _focus={{
-                            bg: "gray.200",
-                          }}
-                          onClick={() => {
-                            window.open(visit, "_blank");
-                          }}
-                        >
-                          Visit
-                        </Button>
-                        {/* <Button
-                          flex={1}
-                          fontSize={"sm"}
-                          rounded={"full"}
-                          bg={"black"}
-                          color={"white"}
-                          boxShadow={
-                            "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
-                          }
-                          _hover={{
-                            bgGradient: "linear(to-r, #7928CA, #FF0080)",
-                          }}
-                          // _focus={{
-                          //   bg: "blue.500",
-                          // }}
-                          onClick={() => {
-                            window.open(source, "_blank");
-                          }}
-                        >
-                          {<BsGithub size="28px" />}
-                        </Button> */}
-                        
-                      </Stack>
-                    </div>
-                  </div>
+              <div style={{display:'flex',flexDirection:'row',borderRadius:'2%'}}>
+                <div style={{textAlign:'center',margin:'auto'}}>
+                  <h1 style={{fontSize:'22px',fontWeight:'bolder'}}>Pacify</h1>
+                  <h2>Alexa Skill Development</h2>
+                  <p style={{fontSize:'15px',marginRight:'13px'}}>Stress management voice interface development and usability testing </p>
+                  <a href="https://my.readymag.com/u1228848457/1912950/">Learn More</a>
+                  <p style={{color:'gray',fontSize:'13px'}}>#User Research #Prototyping #Voice App</p>
                 </div>
-              )
-            )}
+                <img src={logo1} alt="" />
+              </div>
+              <br></br><br></br>
+              <div style={{display:'flex',flexDirection:'row',borderRadius:'2%'}}>
+              <img src={logo2} alt="" />
+                <div style={{textAlign:'center',margin:'auto'}}>
+                  <h1 style={{fontSize:'22px',fontWeight:'bolder'}}>Pratt Institute Libraries</h1>
+                  <h2>Eye-tracking Research</h2>
+                  <p style={{fontSize:'15px',marginLeft:'13px'}}>Enhancing filtering and advanced search navigation for the library website</p>
+                  <a href="https://readymag.com/u1228848457/1673859/">Learn More</a>
+                  <p style={{color:'gray',fontSize:'13px'}}>#User Testing #Eye Tracking #Usability</p>
+                </div>
+               
+              </div>
+              <br></br><br></br>
+              <div style={{display:'flex',flexDirection:'row',borderRadius:'2%'}}>
+                <div style={{textAlign:'center',margin:'auto'}}>
+                  <h1 style={{fontSize:'22px',fontWeight:'bolder'}}>Art21.org</h1>
+                  <h2>Digital Analytics Study </h2>
+                  <p style={{fontSize:'15px',marginRight:'13px'}}>Optimizing video performance and increasing users’ engagement through digital analytics </p>
+                  <a href="https://readymag.com/u1228848457/1671680/">Learn More</a>
+                  <p style={{color:'gray',fontSize:'13px'}}>#SEO #Digital Analytics #Data Analysis</p>
+                </div>
+                <img src={logo3} alt="" />
+              </div>
+              <br></br><br></br>
+              <div style={{display:'flex',flexDirection:'row',borderRadius:'2%'}}>
+              <img src={logo4} alt="" />
+                <div style={{textAlign:'center',margin:'auto'}}>
+                  <h1 style={{fontSize:'22px',fontWeight:'bolder'}}>Alexander Street Press </h1>
+                  <h2>Mobile Navigation Project</h2>
+                  <p style={{fontSize:'15px',marginLeft:'13px'}}>Creating mobile navigation for educational videocontent platform</p>
+                  <a href="https://readymag.com/u1228848457/1582873/">Learn More</a>
+                  <p style={{color:'gray',fontSize:'13px'}}>#User Research #Mobile App #Prototyping</p>
+                </div>
+               
+              </div>
+
           </section>
         {/* </Center> */}
       {/* </Container> */}

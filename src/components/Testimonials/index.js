@@ -91,44 +91,39 @@ const TestimonialMain = () => {
     <Box className="reveal">
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
-          <Heading><Text>My Experience</Text></Heading>
+          <Heading><Text style={{color:'#33b38d'}}>My Experience</Text></Heading>
           {/* <Text>Some Words of Appreciation</Text> */}
         </Stack>
-        <Stack
-          direction={{ base: 'column', md: 'row' }}
-          spacing={{ base: 10, md: 4, lg: 10 }}
-          className="reveal"
-          >
-            {testimonials.map(
-              ({heading, message,message2,message3, avatar, name, title, location})=>(
-                <Testimonial>
-                  <TestimonialContent>
-                  <TestimonialHeading><Text>{heading}</Text></TestimonialHeading>
-                  
-                  <Text
-                    style={{fontWeight: 'bold', fontSize: '0.8em'}}
-                  >
-                    {location}
-                  </Text>
-                  <TestimonialText>
-                  “{message}”
-                  </TestimonialText>
-                  <TestimonialText>
-                  “{message2}”
-                  </TestimonialText>
-                  <TestimonialText>
-                  “{message3}”
-                  </TestimonialText>
-                </TestimonialContent>
-                {/* <TestimonialAvatar
-                  src={avatar}
-                  name={name}
-                  title={title}
-                /> */}
-            </Testimonial>  
-            )
-            )}
-        </Stack>
+      <div>
+        <h1>1. PhD Research Assistant Advised by Dr. Samantha Kleinberg | Health & AI lab, Stevens Institute of Technology</h1>
+        <ul>
+          <li>Designed experiments and collected data about people’s decision-making on Prolific</li>
+          <li>Interpreted and analyzed results using factor analysis, logistic regression, linear trend analysis, etc.</li>
+          <li>Developed public health campaign interventions and published results in the Journal of Medical Internet Research</li>
+        </ul>
+        <h5>01/2021 – PRESENT</h5>
+        <h6>Hoboken, NJ</h6>
+      </div>
+      <div>
+        <h1>2. Graduate Research Assistant Advised by Dr. Irene Lopatovska | Center for Digital Experience, Pratt Institute                                                </h1>
+        <ul>
+          <li>Prototyped educational mobile app and voice interface for mental health support</li>
+          <li>Conducted eye-tracking usability testing and analyzed data using R</li>
+          <li>Presented projects’ results at the ACM conference</li>
+        </ul>
+        <h5>02/2019 – 12/2020</h5>
+        <h6>New York, NY</h6>
+      </div>
+      <div>
+        <h1>3. Web designer | Kaspersky Lab                                                                                                                                 </h1>
+        <ul>
+          <li>Designed websites and branding materials for retail and wellness companies</li>
+          <li>Conceptualized visuals based on clients’ requirements</li>
+          <li>Developed websites architecture and UX strategies</li>
+        </ul>
+        <h5>01/2018 – 01/2019</h5>
+        <h6>Moscow, Russia</h6>
+      </div>
       </Container>
     </Box>
   );

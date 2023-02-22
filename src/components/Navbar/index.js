@@ -56,7 +56,7 @@ const Navbar = () => {
               {/* {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))} */}
-              <Link
+              {/* <Link
                 px={2}
                 spacing={4}
                 display={{ base: "none", md: "flex" }}
@@ -69,7 +69,7 @@ const Navbar = () => {
                 href={"#"}
               >
                 Home
-              </Link>
+              </Link> */}
               <Link
                 px={2}
                 spacing={4}
@@ -96,7 +96,7 @@ const Navbar = () => {
                 }}
                 href={"#projects"}
               >
-                Projects
+                Publications
               </Link>
               <Link
                 px={2}
@@ -110,7 +110,7 @@ const Navbar = () => {
                 }}
                 href={"#blog"}
               >
-                Blog
+                Experience
               </Link>
               <Link
                 px={2}
@@ -124,7 +124,7 @@ const Navbar = () => {
                 }}
                 href={"#contact"}
               >
-                Contact
+                UX & Design Projects
               </Link>
             </HStack>
           </HStack>

@@ -20,58 +20,14 @@ const Blog = () => {
       </Center>
     <Center id="blog" py={4}>
       
-      <section className="reveal container">
-      {blogPosts.map(
-          ({title, description, image, visit,author, tags, time}) => (
-      <div className="reveal card-container">
-        
-           <>
-           {/* <div className="card-image">
-              <img
-                src={image}
-                alt={title} />
-            </div>
-             */}
-            <div className="card-body">
-            
-              {/* <div>
-                  {tags.map((tag, index)=>(           
-                    <span className="card-badge card-badge-blue" key={index} >{tag}</span>
-                  ))}
-              </div> */}
-                <h1>{title}</h1>
-                <p className="card-subtitle">
-                  {description}
-                </p>
-                <div className="card-author">
-                  {/* <img
-                    src={image}
-                    alt={author} /> */}
-                  {/* <div className="author-info">
-                    <p className="author-name">{author}</p>
-                    <p className="post-timestamp">{time}</p>
-                  </div> */}
-                  <Button
-                          flex={1}
-                          width={20}
-                          fontSize={"sm"}
-                          rounded={"full"}
-                          bg= {"gray.200"}
-                          color={'useColorModeValue("blue.700", "gray.700")'}
-                          _hover={{
-                            bgGradient: "linear(to-r, #33b38d, #33b38d)",
-                          }}
-                          onClick={() => {
-                            window.open(visit, "_blank");
-                          }}
-                        >
-                        Visit
-                    </Button>
-                </div>
-              </div></>
-        
-        </div>
-        ))}
+      <section className="reveal container-fluid">
+          <div>
+            <h6>Korshakova, E., Marsh, J. K., & Kleinberg, S. (2022). Health Information Sourcing and Health Knowledge Quality: Repeated Cross-sectional Survey. JMIR Formative Research, 6(9), e39274. <a href="https://formative.jmir.org/2022/9/e39274/PDF" style={{color:'blue'}}>PDF</a></h6><br></br>
+            <h6>Korshakova, E., Bae, S., Yang, Y., Kate, S., Samant, P. (2022) Towards Human-Centric XAI Chatbots in Mental Health for End-User Experience, the Human-Centered Explainable AI (HCXAI)<br></br> workshop, May 12-13, 2022. ACM Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems 
+ <a href="https://formative.jmir.org/2022/9/e39274/PDF" style={{color:'blue'}}>PDF</a></h6>
+          </div>
+
+
       </section>
     </Center></>
   );

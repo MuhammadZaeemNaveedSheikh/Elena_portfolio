@@ -33,14 +33,16 @@ const App=() =>{
       <ChakraProvider>
         <Navbar/>
         <Hero/>
-        <About />
-        <Projects/>
-        <Divider/>
         <Blog/>
-        <Divider/>
+        {/* <About /> */}
         <TestimonialMain/>
         <Divider/>
-        <Contact/>
+       
+        <Divider/>
+        
+        <Projects/>
+        <Divider/>
+        {/* <Contact/> */}
         <Footer/> 
     </ChakraProvider>
   )

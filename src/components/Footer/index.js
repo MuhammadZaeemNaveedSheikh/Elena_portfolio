@@ -90,7 +90,7 @@ const Footer = () => {
             Elena Korshakova
           </Box>
           <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
-            <Link
+            {/* <Link
               px={2}
               spacing={4}
               display={{ base: "none", md: "flex" }}
@@ -103,7 +103,7 @@ const Footer = () => {
               href={"#"}
             >
               Home
-            </Link>
+            </Link> */}
             <Link
               px={2}
               spacing={4}
@@ -130,7 +130,7 @@ const Footer = () => {
               }}
               href={"#projects"}
             >
-              Projects
+              Publications
             </Link>
             <Link
               px={2}
@@ -144,7 +144,7 @@ const Footer = () => {
               }}
               href={"#blog"}
             >
-              Blog
+              Experience
             </Link>
             <Link
               px={2}
@@ -158,7 +158,7 @@ const Footer = () => {
               }}
               href={"#contact"}
             >
-              Contact
+              UX & Design Projects
             </Link>
           </HStack>
         </HStack>

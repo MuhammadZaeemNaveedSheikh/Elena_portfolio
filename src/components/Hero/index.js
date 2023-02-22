@@ -29,7 +29,7 @@ import {
 } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
-import heroImage from "../../1.JPG";
+import heroImage from "../../10.png";
 import resume from "../../2.png";
 
 const Hero = () => {
@@ -63,7 +63,7 @@ const Hero = () => {
                   zIndex: -1,
                 }}
               >
-                Welcome to my
+                About
               </Text>
               <br />
               <Text
@@ -72,11 +72,16 @@ const Hero = () => {
                 bgGradient="linear(to-l, #33b38d, #33b38d)"
                 bgClip="text"
               >
-                Portfolio!
+                Me!
               </Text>
               
             </Heading>
+            <h1 style={{color:'#33b38d',fontSize:'20px'}}>Elena Korshakova</h1>
+           
            <h1 style={{color:'#33b38d'}}>Research Software Engineer</h1>
+           <h1>PhD Candidate at Stevens Institute of Technology
+Health and AI Lab
+</h1>
             <Text color={"gray.400"}>
             My research delves deep into the intersection of three fields - healthcare, computer science, and human-computer interaction. I am working towards utilizing the groundbreaking potential of AI to optimize the way people make decisions regarding their health. By leveraging the power of technology, I aim to create a system that can provide support to individuals, enabling them to make well-informed and confident choices about their health. With my research, I envision a future where people have the power to take full control of their health and well-being through the use of AI in their daily lives.
             
@@ -86,22 +91,41 @@ const Hero = () => {
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: "column", sm: "row" }}
             >
+              <div>
               <Button
-                rounded={"full"}
-                size={"lg"}
-                fontWeight={"normal"}
-                px={6}
-                colorScheme={"red"}
-                bgGradient="linear(to-l, #33b38d, #33b38d)"
-                _hover={{ bgGradient: "linear(to-r, #33b38d, #33b38d)" }}
+                background={""}
                 onClick={() => {
                   window.location.href = "#contact";
                 }}
               >
-                Hire me
+               Research Interests
               </Button>
+              <br></br>
+              <ul>
+                <li>Decision-making in healthcare</li>
+                <li>Human-computer interaction</li>
+                <li>Explainable AI </li>
+              </ul>
 
-              <Popover placement="bottom" isLazy>
+              </div>
+              <div>
+              <Button
+                background={""}
+                onClick={() => {
+                  window.location.href = "#contact";
+                }}
+              >
+               Education
+              </Button>
+              <br></br>
+              <ul>
+                <li>PhD in Computer Science, Estimated 2024 Stevens Institute of Technology</li>
+                <li>MS in Information Experience Design, 2020 Pratt Institute</li>
+                <li>BS in Business Informatics, 2018 Financial University </li>
+              </ul>
+
+              </div>
+              {/* <Popover placement="bottom" isLazy>
                 <PopoverTrigger>
                   <Button
                     rounded={"full"}
@@ -122,13 +146,14 @@ const Hero = () => {
                   <PopoverHeader fontWeight="bold">
                     My Resume(Click on image to open)
                   </PopoverHeader>
-                  <PopoverBody>
+                  <PopoverBody style={{display:'flex',flexDirection:'column'}}>
                     <Image
                       alt={"Hero Image"}
                       fit={"cover"}
                       align={"center"}
                       w={"100%"}
                       h={"100%"}
+                      borderRadius={"100%"}
                       src={resume}
                       onClick={() => {
                         window.open(
@@ -136,9 +161,11 @@ const Hero = () => {
                         );
                       }}
                     />
+                    
                   </PopoverBody>
+                  
                 </PopoverContent>
-              </Popover>
+              </Popover> */}
               {/* </Button> */}
             </Stack>
           </Stack>
@@ -157,14 +184,14 @@ const Hero = () => {
               left={0}
               zIndex={-1}
             /> */}
-            <Box
+            {/* <Box
               position={"relative"}
               height={"350px"}
               rounded={"2xl"}
               boxShadow={"2xl"}
               width={"full"}
               overflow={"hidden"}
-            >
+            > */}
               <Image
                 alt={"Hero Image"}
                 // fit={"cover"}
@@ -174,7 +201,7 @@ const Hero = () => {
                 margin={"auto"}
                 src={heroImage}
               />
-            </Box>
+            {/* </Box> */}
           </Flex>
         </Stack>
       </Container>
